@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXORA AI</title>
+<style>
+body {
+  margin: 0;
+  background: #090d18;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+header { padding: 30px; color: #d9b45b; }
+main { max-width: 600px; margin: 30px auto; padding: 20px; }
+input {
+  width: 75%; padding: 15px; border-radius: 10px;
+  border: 1px solid #d9b45b;
+  background: #171e30; color: white;
+}
+button {
+  padding: 15px; background: #d9b45b;
+  border: 0; border-radius: 10px; cursor: pointer;
+}
+#answer { margin-top: 25px; line-height: 1.6; }
+</style>
+</head>
+<body>
+<header><h1>✦ NEXORA AI</h1>
+<p>Your All-in-One AI Assistant</p></header>
+<main>
+<h2>Welcome to NEXORA</h2>
+<p>Ask anything. Explore everything.</p>
+<input id="question" placeholder="Ask me anything...">
+<button onclick="askAI()">Send</button>
+<div id="answer"></div>
+</main>
+<script>
+function askAI() {
+ const q = document.getElementById("question").value.trim();
+ if (!q) return;
+ document.getElementById("answer").innerText =
+ "NEXORA AI Demo: Your question is: " + q +
+ ". AI connection will be added soon.";
+}
+</script>
+</body>
+</html>
